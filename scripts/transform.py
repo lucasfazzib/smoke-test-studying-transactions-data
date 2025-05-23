@@ -26,3 +26,4 @@ if __name__ == "__main__":
     table_name = "transactions_clean"
 
     transform_and_load(csv_path, db_url, table_name)
+    ##
