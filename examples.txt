@@ -1,0 +1,14 @@
+| Tipo                       | Exemplo com Pandas                                                   |
+| -------------------------- | -------------------------------------------------------------------- |
+| **Remover duplicatas**     | `df.drop_duplicates(subset=['col'])`                                 |
+| **Remover nulos**          | `df.dropna(subset=['col'])`                                          |
+| **Preencher nulos**        | `df['col'].fillna('valor')`                                          |
+| **Conversão de tipo**      | `df['col'] = df['col'].astype('int')` ou `pd.to_datetime(df['col'])` |
+| **Criar coluna derivada**  | `df['total'] = df['price'] * df['quantity']`                         |
+| **Renomear colunas**       | `df.rename(columns={'old': 'new'})`                                  |
+| **Filtragem condicional**  | `df[df['price'] > 100]`                                              |
+| **Agrupamentos**           | `df.groupby('symbol').agg({'price': 'mean'})`                        |
+| **Ordenações**             | `df.sort_values(by='timestamp', ascending=False)`                    |
+| **Mapeamentos (replace)**  | `df['col'].replace({'old': 'new'})`                                  |
+| **Exportar CSV**           | `df.to_csv('clean.csv', index=False)`                                |
+| **Inserção no PostgreSQL** | `df.to_sql('tabela', engine, if_exists='replace')`                   |
