@@ -1,6 +1,6 @@
 # Data Smoke Test Project
 
-This project simulates a common smoke test scenario for data engineering candidates. It involves reading a transactional CSV file, applying data transformations, and loading the results into a PostgreSQL database.
+This project simulates a common smoke test scenario for data engineering. It involves reading a transactional CSV file, applying data transformations, and loading the results into a PostgreSQL database.
 
 ## Features
 - Cleans data: removes rows with null 'symbol' and duplicate 'transaction_id'
